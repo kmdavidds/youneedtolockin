@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "You Need To Lock In",
+    "version": "1.0.0",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "lock.png"
+    },
+    "icons": {
+        "16": "lock.png",
+        "32": "lock.png",
+        "48": "lock.png",
+        "128": "lock.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}
