@@ -15,7 +15,7 @@ chrome.storage.local.get(["toggle"]).then((result) => {
   let toggleBtn = document.getElementById("toggle-btn");
   toggleBtn.innerHTML = toggle;
   if (toggle == "off") {
-    setCSS("--button-bg-color", "green");
+    setCSS("--button-bg-color", "red");
   }
 
   toggleBtn.addEventListener("click", () => {
@@ -23,12 +23,12 @@ chrome.storage.local.get(["toggle"]).then((result) => {
       toggle = "off";
       storeToggle("off");
       toggleBtn.innerHTML = "off";
-      setCSS("--button-bg-color", "green");
+      setCSS("--button-bg-color", "red");
     } else if (toggle == "off") {
       toggle = "on";
       storeToggle("on");
       toggleBtn.innerHTML = "on";
-      setCSS("--button-bg-color", "red");
+      setCSS("--button-bg-color", "green");
     }
   });
 });
