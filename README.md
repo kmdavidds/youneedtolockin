@@ -12,7 +12,7 @@
 
 ## 📁 Project Structure
 
-```
+```sh
 ├── content.js # Content script that replaces webpage content 
 ├── index.html # Extension popup HTML 
 ├── lock.png # Icon used for the extension 
