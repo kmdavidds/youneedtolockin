@@ -12,13 +12,14 @@
 
 ## 📁 Project Structure
 
+```
 ├── content.js # Content script that replaces webpage content 
 ├── index.html # Extension popup HTML 
 ├── lock.png # Icon used for the extension 
 ├── manifest.json # Chrome extension manifest (v3) 
 ├── script.js # Handles toggle logic and storage 
 └── style.css # Styling for the popup UI
-
+```
 
 ## 🧠 How It Works
 
